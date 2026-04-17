@@ -1,24 +1,13 @@
-/* ══════════════════════════════════════════
-   RCHsites — AI Chat Widget
-   Drop this script into any page.
-   ══════════════════════════════════════════ */
+
 
 (function () {
   'use strict';
 
-  // ─── CONFIG ───────────────────────────────
   var CONFIG = {
     proxyUrl: 'https://rch-chat-proxy.silky6767.workers.dev',
 
     greeting: "Hey there -- I am the RCHsites assistant. Ask me anything about our plans, process, pricing, or how we build websites.",
 
-    // ────────────────────────────────────────
-    // SYSTEM PROMPT
-    // Edit the text below to update what the
-    // chatbot knows. Keep each line inside the
-    // quotes. Do not delete the opening or
-    // closing backtick characters.
-    // ────────────────────────────────────────
     systemPrompt: [
       "You are the AI assistant for RCHsites -- a web design studio based in Opelika, Alabama that builds custom websites and delivers them as clean HTML files. You live as a chat widget on the RCHsites website.",
       "",

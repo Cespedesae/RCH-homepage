@@ -1,7 +1,7 @@
-/* ═══ RCHsites — Shared Scripts ═══ */
+
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── PERSPECTIVE GRID ──
+
   const gc = document.getElementById('gridCanvas');
   if (gc) {
     const gx = gc.getContext('2d');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
   }
 
-  // ── NAV ──
+
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 30);
@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.n-links').classList.toggle('open');
   });
 
-  // ── SCROLL REVEALS ──
+
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
   }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el => obs.observe(el));
 
-  // ── SMOOTH SCROLL ──
+
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
